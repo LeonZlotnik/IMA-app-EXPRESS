@@ -1,0 +1,40 @@
+<form id="form" class="form-background" method="POST">
+  <label class="label" for="productName">Producto</label>
+  <div class="control">
+    <select onchange="selectProduct()" class="input" name="productName" id="">
+      {{#each product}}
+      <option id={{_id}} value="{{productName}}">{{productName}}</option>
+      {{/each}}
+    </select>
+  </div>
+  <br>
+  <br>
+  <label class="label" for="productQuantity">Cantidad</label>
+  <div class="control">
+    <input class="input" type="number" name="productQuantity" max="100">
+  </div>
+  <br>
+  <br>
+  <input class="button is-primary" type="submit" value="Crear">
+</form>
+
+
+
+<script>
+
+  let form = document.getElementById('form');
+
+  function selectProduct() {
+    for (var i = 0; i < form.productName.length; i++) {
+      if (form.productName[i].selected) {
+        form.setAttribute('action', `/compras/${form.productName[i].id}`);
+        form.setAttribute('action', `/compras/${form.productQuantity[i].id}`);
+        return;
+      }
+    }
+  }
+
+
+
+
+</script>

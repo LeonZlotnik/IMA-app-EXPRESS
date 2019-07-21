@@ -1,0 +1,62 @@
+{{#each u}}
+<h1>Bienvenido {{username}}</h1>
+{{/each}}
+<section>
+  <ul id="info-user">
+    <li><a href="/usuarios">Datos</a></li>
+    <li><a href="/compras">Compras</a></li>
+    <li><a href="/ventas">Ventas</a></li>
+  </ul>
+
+  <div id="product-button">
+    <a href="/productos">Crear Producto</a>
+  </div>
+
+
+
+  <canvas id="myChart" width="400" height="400"></canvas>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th><abbr title="Registro">Registro</abbr></th>
+        <th>Producto</th>
+        <th><abbr title="Código">Código</abbr></th>
+        <th><abbr title="Especificación">Especificación</abbr></th>
+        <th><abbr title="Cantidad">Cantidad</abbr></th>
+        <th><abbr title="Unidad">Unidad</abbr></th>
+        <th><abbr title="CostoUnit">Costo x Unit</abbr></th>
+        <th><abbr title="Moneda">Moneda</abbr></th>
+        <th><abbr title="Empaque">Empaque</abbr></th>
+        <th><abbr title="Presentacion">Presentación</abbr></th>
+        <th><abbr title="Dimensiones">Dimensiones de la Presentación</abbr></th>
+        <th><abbr title="Fracción Arancelaria">Restricción Arancelaria</abbr></th>
+        <th><abbr title="IVA">IVA</abbr></th>
+        <th><abbr title="IGI">Impuesto General de Importación</abbr></th>
+      </tr>
+    </thead>
+    {{#each p}}
+    <tbody>
+      <tr>
+        <th>{{@index}}</th>
+        <td>{{productName}}</td>
+        <td>{{productCode}}</td>
+        <td>{{productSpecification}}</td>
+        <td>{{productQuantity}}</td>
+        <td>{{productUnitMeasurement}}</td>
+        <td>{{productUnitCost}}</td>
+        <td>{{productCurrency}}</td>
+        <td>{{productPackage}}</td>
+        <td>{{productPresentation}}</td>
+        <td>{{productDimensions}}</td>
+        <td>{{productHS}}</td>
+        <td>{{productIVA}}</td>
+        <td>{{productIGI}}</td>
+      </tr>
+    </tbody>
+    {{/each}}
+    
+  </table>
+
+
+</section>

@@ -1,0 +1,9 @@
+---
+applications:
+  - instances: 1
+    name: inventorymanagementapp
+    memory: 256M
+    domain: mybluemix.net
+    host: inventorymanagementapp
+    path: .
+    command: npm start

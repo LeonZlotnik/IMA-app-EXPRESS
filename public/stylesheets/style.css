@@ -1,0 +1,129 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.form-background {
+  width: 70%;
+  height: auto;
+  margin: 2%; }
+
+h1 {
+  text-align: center;
+  font-size: 45px;
+  line-height: 60px; }
+
+main {
+  width: 100%;
+  background-color: black;
+  height: 60px; }
+
+ul {
+  width: 100%;
+  height: 60px; }
+
+li {
+  width: 110px;
+  height: 30px;
+  float: right;
+  color: #FFFFFF;
+  list-style-type: none;
+  text-decoration: none; }
+
+li:hover {
+  color: aqua; }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+#section1 {
+  width: 50%;
+  height: 400px;
+  background-color: #529af8;
+  opacity: 0.75;
+  position: absolute;
+  top: 150px;
+  left: 10px; }
+
+#section1 p {
+  color: beige;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 25px;
+  padding: 5%; }
+
+#section2 {
+  width: 50%;
+  height: 400px;
+  background-color: #c2c4c6;
+  opacity: 0.85;
+  position: absolute;
+  top: 150px;
+  right: 10px; }
+
+#section2 form {
+  width: 30%;
+  height: auto;
+  margin: 2% 5%;
+  float: left; }
+
+#signin-button {
+  width: 90%;
+  height: 50px;
+  background-color: #00B7FF;
+  position: relative;
+  top: 350px;
+  left: 30px; }
+
+.a-signin {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 30px;
+  text-align: left; }
+
+#info-user {
+  width: 100%;
+  height: 100px; }
+
+#info-user li {
+  width: 180px;
+  height: 80px;
+  background-color: gainsboro;
+  float: left;
+  margin: 10px 120px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 8%; }
+
+#product-button {
+  width: 450px;
+  height: 100px;
+  background-color: #00B7FF;
+  margin: 50px 400px;
+  text-align: center;
+  line-height: 90px;
+  border-radius: 4%; }
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: black; }
+
+footer p {
+  text-align: center;
+  color: aliceblue; }
+
+iframe {
+  width: 100%;
+  height: 250px;
+  margin: 10px;
+  border: solid 2px 2px blueviolet; }
+
+#important {
+  color: red;
+  font-size: 20px; }
+
+.index-img {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

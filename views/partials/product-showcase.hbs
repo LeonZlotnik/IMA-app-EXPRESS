@@ -1,0 +1,28 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th><abbr title="Registro">Registro</abbr></th>
+      <th>Producto</th>
+      <th><abbr title="Cantidad">Cantidad</abbr></th>
+      <th><abbr title="Unidad">Unidad</abbr></th>
+      <th><abbr title="CostoUnit">Costo x Unit</abbr></th>
+      <th><abbr title="Moneda">Moneda</abbr></th>
+      <th><abbr title="Empaque">Empaque</abbr></th>
+      <th><abbr title="Presentacion">Presentación</abbr></th>
+    </tr>
+  </thead>
+  {{#each p, cp}}
+  <tbody>
+    <tr>
+      <th>{{@index}}</th>
+      <td>{{productName}}</td>
+      <td>{{productQuantity}}</td>
+      <td>{{productUnitMeasurement}}</td>
+      <td>{{productUnitCost}}</td>
+      <td>{{productCurrency}}</td>
+      <td>{{productPackage}}</td>
+      <td>{{productPresentation}}</td>
+    </tr>
+  </tbody>
+  {{/each}}
+</table>
